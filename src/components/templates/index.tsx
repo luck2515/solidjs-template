@@ -1,16 +1,14 @@
-import type { Component } from "solid-js";
+import { Component } from "solid-js";
+import Layout from "../shared/Layout";
 
-const App: Component = () => {
+interface Props {}
+
+const TopTemplate: Component<Props> = () => {
   return (
-    <div>
-      <header>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>Learn Solid</p>
-      </header>
-    </div>
+    <Layout title="トップページ">
+      <p>トップページ</p>
+    </Layout>
   );
 };
 
-export default App;
+export default TopTemplate;
